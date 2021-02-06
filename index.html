@@ -11,8 +11,16 @@
 </head>
 
 <body>
+    <!-- Navbar -->
+
+    <div class="navbar">
+        <a class="active" href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+    </div>
     <!-- Title Page -->
-    <div class="title container">
+    <div class="title container" id="home">
         <div class="card">
             <div style="border-radius: 12px">
                 <div>
@@ -30,7 +38,7 @@
             </div>
         </div>
         <!-- Contact Icons -->
-        <div class="icon-card">
+        <div class="icon-card" id="contact">
             <div class="icon">
                 <a href="https://www.facebook.com/profile.php?id=100013566065609">
                     <img alt="GitHub icon" src="Images/f_logo_RGB-White_250.png"></img>
@@ -67,7 +75,7 @@
     <div class="mid-section">
 
         <!-- About -->
-        <div class="about container">
+        <div class="about container" id="about">
             <h1>
                 About
             </h1>
@@ -83,7 +91,7 @@
         </div>
 
         <!-- Skills -->
-        <div class="container skills">
+        <div class="container skills" id="skills">
             <h1>Skills</h1>
             <div class="skills-inner-container">
                 <div class="skills-card">
@@ -123,7 +131,7 @@
     </div>
 
     <!-- Projects -->
-    <div class="projects container">
+    <div class="projects container" id="projects">
         <h1>
             Projects
         </h1>
@@ -205,9 +213,15 @@
 
     </div> -->
 
-    <footer>Casey Wilson 2021</footer>
+    <footer>
+        <p>Copyright © <span id="year"></span></p>
+    </footer>
 
-    <script src="index.js"></script>
+    <script>    
+    let year = new Date().getFullYear()
+    document.getElementById('year').innerHTML = year;
+    
+    </script>
 
     </div>
 

@@ -1,9 +1,34 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: "Lato", sans-serif;
   color: #fff;
   background-color: #355c7d;
+}
+
+/* Navbar */
+
+.navbar {
+  overflow: hidden;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+  background-color: #f67280;
+}
+
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-size: 17px;
+  color: white;
+}
+
+.navbar a:hover {
+  color: rgba(255, 255, 255, 0.555);
 }
 
 .container {
@@ -14,7 +39,7 @@ body {
 }
 
 .mid-section {
-  background-image: url("./Scattered-Forcefields.svg");
+  background-image: url("./Images/Scattered-Forcefields.svg");
   /* background by SVGBackgrounds.com */
 }
 
@@ -32,7 +57,6 @@ body {
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.4);
   width: 30rem;
   border: 1px solid #e0e0e0;
-  color: #fff;
 }
 
 .title-image {
@@ -79,6 +103,8 @@ body {
   color: white;
   text-decoration: none;
 }
+
+/* About */
 
 .about {
   margin-bottom: 10rem;
@@ -156,7 +182,6 @@ body {
 
 .projects {
   background: linear-gradient(#355c7d, #c06c84, #f67280);
-  color: #fff;
 }
 
 .projects h1 {
@@ -196,8 +221,7 @@ body {
 
 .project-images img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 2rem auto;
   width: 70%;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.4);
 }
@@ -213,7 +237,7 @@ body {
   text-decoration: none;
   color: #fff;
   padding: 0.7rem;
-  border: 1px solid #fff;
+  border: 1.5px solid #fff;
   border-radius: 4px;
 }
 
@@ -253,8 +277,10 @@ body {
 .game-holder {
 }
 
+/* Footer */
+
 footer {
-  padding: 10rem 0 2rem;
+  padding: 10rem 0 5rem;
   width: 100%;
   background-color: #f67280;
   color: white;
@@ -262,6 +288,9 @@ footer {
 }
 
 @media only screen and (max-width: 700px) {
+  .navbar {
+    display: none;
+  }
   .card {
     width: auto;
   }
@@ -292,14 +321,16 @@ footer {
   }
 
   .about {
-    background-image: url("./Scattered-Forcefields.svg");
+    background-image: url("./Images/Scattered-Forcefields.svg");
     /* background by SVGBackgrounds.com */
     background-repeat: no-repeat;
+    margin-bottom: 5rem;
   }
 
   .skills {
-    background-image: url("./Confetti-Doodles.svg");
+    background-image: url("./Images/Confetti-Doodles.svg");
     /* background by SVGBackgrounds.com */
+    margin-bottom: 5rem;
   }
 
   .skills-card {
@@ -307,12 +338,12 @@ footer {
   }
 
   .projects h1 {
-    margin-bottom: 1rem;
+    margin-bottom: 0;
   }
 
   .projects-card {
     padding: 1.5rem;
-    margin: 5rem 2rem;
+    margin: 3rem 2rem;
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.4);
     width: 20rem;
   }
@@ -323,5 +354,9 @@ footer {
 
   .project-description {
     margin: 0.5rem;
+  }
+
+  footer {
+    padding: 5rem 0 1rem;
   }
 }
