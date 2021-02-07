@@ -280,7 +280,7 @@ body {
 /* Footer */
 
 footer {
-  padding: 10rem 0 5rem;
+  padding: 10rem 0 0.5rem;
   width: 100%;
   background-color: #f67280;
   color: white;
@@ -354,9 +354,5 @@ footer {
 
   .project-description {
     margin: 0.5rem;
-  }
-
-  footer {
-    padding: 5rem 0 1rem;
   }
 }
