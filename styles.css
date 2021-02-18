@@ -10,6 +10,12 @@ body {
   background-color: #355c7d;
 }
 
+.page-wrapper {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1600px;
+}
+
 /* Navbar */
 
 .navbar {
